@@ -23,13 +23,13 @@
     <!-- Add your site or application content here -->
     <div class="container">
       <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a ng-href="#">Home</a></li>
-          <li><a ng-href="#/about">About</a></li>
-          <li><a ng-href="#/contact">Contact</a></li>
-          <li><a ng-href="#/login">Login</a></li>
+        <ul class="nav nav-pills pull-right" ng-controller="MenuCtrl">
+          <li ng-class="{ active: isActive('/')}"><a ng-href="#">Home</a></li>
+          <li ng-class="{ active: isActive('/about')}"><a ng-href="#/about">About</a></li>
+          <li ng-class="{ active: isActive('/contact')}"><a ng-href="#/contact">Contact</a></li>
+          <li ng-class="{ active: isActive('/login')}"><a ng-href="#/login">Login</a></li>
         </ul>
-        <h3 class="text-muted">mytodo</h3>
+        <h3 class="text-muted">LogoIsHere</h3>
       </div>
 
       <div ng-view=""></div>
@@ -75,8 +75,7 @@
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/controllers/about.js"></script>
+        <script src="scripts/controllers/index.js"></script>
         <!-- endbuild -->
 </body>
 </html>

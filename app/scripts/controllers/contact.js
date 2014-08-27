@@ -2,16 +2,15 @@
 
 /**
  * @ngdoc function
- * @name mytodoApp.controller:AboutCtrl
+ * @name mytodoApp.controller:ContactCtrl
  * @description
- * # AboutCtrl
+ * # ContactCtrl
  * Controller of the mytodoApp
  */
-angular.module('mytodoApp')
-  .controller('ContactCtrl', function ($scope) {
+angular.module('mytodoApp').controller('ContactCtrl', function ($scope) {
     $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
+        'HTML5 Boilerplate',
+        'AngularJS',
+        'Karma'
     ];
-  });
+});

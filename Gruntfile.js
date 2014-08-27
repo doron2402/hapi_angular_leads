@@ -237,6 +237,19 @@ module.exports = function (grunt) {
     //   dist: {}
     // },
 
+    concat: {
+      dist: {
+        files: [{
+          src: ['<%= yeoman.app %>/scripts/controllers/main.js',
+            '<%= yeoman.app %>/scripts/controllers/menu.js',
+            '<%= yeoman.app %>/scripts/controllers/login.js',
+            '<%= yeoman.app %>/scripts/controllers/about.js',
+            '<%= yeoman.app %>/scripts/controllers/contact.js'],
+          dest: '<%= yeoman.app %>/scripts/controllers/index.js'
+        }]
+      }
+    },
+
     imagemin: {
       dist: {
         files: [{
